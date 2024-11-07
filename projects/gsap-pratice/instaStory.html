@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="instaStrory.css" />
+  </head>
+  <body>
+    <div class="card">
+        <div class="fullScreen"></div>
+      <div class="story">
+        <div class="manystory"></div>
+      </div>
+    </div>
+
+    <script>
+      var arr = [
+        {
+          dp: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          story:
+            "https://images.unsplash.com/photo-1545912453-3d32e20f72bf?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        },{dp: "https://images.unsplash.com/photo-1547147607-6eab7b49f3ee?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          story:
+            "https://images.unsplash.com/photo-1503104834685-7205e8607eb9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        },{ dp: "https://images.unsplash.com/photo-1502831376-280384d0fbd8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          story:
+            "https://images.unsplash.com/photo-1520065949650-380765513210?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  
+        },{ dp: "https://media.istockphoto.com/id/628035524/photo/on-a-beach.webp?s=2048x2048&w=is&k=20&c=025OIAu4jT7rW4-uA_LOf04TTYamH7NvPZB4EqbYkCU=",
+          story:
+            "https://images.unsplash.com/photo-1520065949650-380765513210?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        },
+      ];
+      var cultter = "";
+      arr.forEach(function (elem, idx) {
+        cultter += `<div class="manystory">
+            <img id="${idx}" src="${elem.dp}" alt="">
+            </div>
+        `;
+
+      });
+      document.querySelector(".story").innerHTML=cultter;
+      document.querySelector(".story").addEventListener("click",(dets)=>{
+        var value= arr[dets.target.id].story;
+        document.querySelector(".fullScreen").style.display = "block";
+        document.querySelector(".fullScreen").style.backgroundImage = `url(${value})`
+      });
+      setTimeout(()=>{
+        document.querySelector(".fullScreen").style.display = "none";
+        
+      },3000)
+    </script>
+  </body>
+</html>

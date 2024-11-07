@@ -1,0 +1,189 @@
+*{
+    background-color: black;
+    color: azure;
+}
+    nav {
+        background-color: #333;
+    }
+    nav a {
+        text-decoration: none;
+        padding:20px;
+        padding-right: 35px;
+        font-size: small;
+        text-align: center;
+        float: right;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+    .sign{
+        background-color: blueviolet;
+        padding: 15px;
+        border-radius: 3px;
+        margin-top: 6px;
+        margin-right: 8px;
+    }
+    .sign:hover{
+        color: blueviolet;
+        background-color: white;
+    }
+    .tap:hover{
+        color: blueviolet;
+        
+    }
+    .first_border{
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    #bisxxal{
+        float: left;
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+        margin: 0;
+    }
+   
+   /* 1st part */
+   #firstpart{
+    overflow: auto;           /*  it is used for dont flow in div (parent element float in web so) */
+    overflow: hidden;
+   }
+   .section3{
+    width: 33.33%;
+    float: left;
+   }
+   .img{
+    height: 521px;
+    
+   }
+   .sidetext{
+    float: right;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 6px;
+    height: 92px;
+    width: 174px;
+    margin-top: 50px;
+    overflow: hidden;
+    border: 4px solid blueviolet;
+   }
+   .sideguide{
+    font-size: 20px;
+    margin-top: 177px;
+    margin-left: 31px;
+
+
+}
+   .ui{
+    font-size: 103px;
+    margin-left: 2px;
+    margin-top: 65px;
+    color: blueviolet;
+    margin-bottom: 36px;
+    font-family: sans-serif;
+   }
+   .beg{
+    font-size: 50px;
+    font-weight: 100;
+   margin-left: 7px;
+    writing-mode:vertical-lr;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-orientation: sideways-right; */
+    
+}
+.pro{
+    margin-left: 53px;
+    font-size: 18px;
+    
+
+}
+
+/* 2nd part of  */
+
+#secondpart{
+    overflow: hidden;
+    
+   }
+   .section4{
+    background-color: #0c0c0c;
+    width: 33.33%;
+    padding-left: 118px;
+    padding: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    font-size: 26px;
+    float: right;
+
+    box-sizing: border-box;
+   }
+
+   /* last box in webpage */
+
+   #last{
+    overflow: hidden;
+    background-color: blueviolet;
+
+   }
+   .fool{
+    background-color: blueviolet;   
+    box-sizing: border-box;
+    float: left;
+    padding-top: 34px;
+    padding-left: 82px;
+    width: 33.33%;
+    font-size: 20px;
+   } 
+   .his{
+    background-color: blueviolet;
+   }
+   .his:hover{
+    color: darkgoldenrod;
+   }
+
+/* 3d pargaah  */
+#trd{
+    background-image: url(pj_02.png);
+    height: 100%;
+    height: 1894px;
+
+}
+.abo{
+    font-size: 46px;
+    color: blueviolet;
+}
+.about{
+    float: left;
+    box-sizing: border-box;
+    margin-top: 131px;
+    width: 527px;
+    margin-left: 58px;
+    overflow: hidden;
+}
+.for{
+    float: right;
+    float: bottom;
+    box-sizing: border-box;
+}
+
+
+/* 4th para  */
+.what{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.user{
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 200;
+
+}
+.forpg{
+    width: 33.33%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}

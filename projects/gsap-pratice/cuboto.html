@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cuboto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&family=Smooch+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&family=Saira:ital,wght@1,600;1,700&family=Smooch+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="home">
+        <div class="nav">
+          <div>cuuboto</div>
+          <div id="right">
+            <a href="#">our showerel</a>
+            <a href="#">menu</a>
+            <i class="ri-align-right"></i>
+          </div>
+        </div>
+        <div class="homemain">
+          <h5 class="animate">we make it happen.</h5>
+          <div class="hedeings">
+            <h1 class="animate">Website Apps Brand</h1>
+            <!-- <h1 class="animate"></h1>
+            <h1 class="animate"></h1> -->
+          </div>
+        </div>
+        <div class="homelast">
+          <p class="animate">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur,
+            eum!sciunt harum! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit . Vitae in inciduntnisi harum blanditiis ex exercitationem
+            atque odio accusamus doloribus. Repellat
+          </p>
+        </div>
+      </div>
+
+      <div class="featured">
+        <div class="fheading">
+          <h1 class="animate">Featuuured</h1>
+          <h1 class="animate" >Projects</h1>
+        </div>
+        <div class="featuredimg">
+            <div class="fleft">
+                <div class="fletele">
+                    <h3>Bisxxal</h3>
+                    <h1>official webside of bisxxal , saudi arabia captial</h1>
+                    <h5>design , development ,project</h5>
+                </div>
+                <div class="fletele">
+                    <h3>Bisxxal</h3>
+                    <h1>official webside of bisxxal , saudi arabia captial</h1>
+                    <h5>design , development ,project</h5>
+                </div>
+                <div class="fletele">
+                    <h3>Bisxxal</h3>
+                    <h1>official webside of bisxxal , saudi arabia captial</h1>
+                    <h5>design , development ,project</h5>
+                </div>
+                <div class="fletele">
+                    <h3>Bisxxal</h3>
+                    <h1>official webside of bisxxal , saudi arabia captial</h1>
+                    <h5>design , development ,project</h5>
+                </div>
+            </div>
+            <div class="fright">
+                <div class="img">
+
+                </div>
+                 </div>
+           
+        </div>
+        
+        <div class="btndiv">
+                 <button>Explore more</button>
+                </div>
+      </div>
+
+      <div class="dev">
+        <h1>
+          Development and design Resources
+        </h1>
+        <p >
+          we regularly relese design courses , offer advices to newbie designrs  , walk effects , and share source files  
+        </p>
+      </div>
+
+      <div class="slides">
+
+        <div class="imgpart">
+          <div class="img">
+            <img src="https://cdn.cuberto.com/cb/upload/480b30071a8533b278c30dd7d9133f09.png" alt="">
+            <div class="tag">design course</div>
+            <h3>How to make epic webside // forntend development</h3>
+          </div>
+          <div class="img">
+            <img src="https://cdn.cuberto.com/cb/upload/99d9ee549abf01940d4b1cfa04734b7d.jpg" alt="">
+            <div class="tag">Mouse follower</div>
+            <h3>How to make epic webside // forntend development</h3>
+            
+          </div>
+          <div class="img">
+            <img src="https://cdn.cuberto.com/cb/upload/885fbbc555395f745746b23b73f539f5.png" alt="">
+            <div class="tag">Making switch </div>
+            <h3>How to make epic webside // forntend development</h3>
+          </div>
+        </div>
+
+      </div>
+      <div class="btndiv">
+        <button>view all resources</button>
+       </div>
+
+       <div class="fotter">
+        <h1 id="h1" >Have </h1>
+
+        <h1 >an idea?</h1>
+        <div class="lastbtn">
+          <button>
+            TELL US   
+          </button>
+        </div>
+        <div class="lastcopy">
+          <h2 id="bo">info@cuborto.com</h2>
+          <h2 id="bo">+1 301 549 9309</h2>
+          <h2>PRIVECY POLICY</h2>
+        </div>
+       </div>
+       
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+ var t1 = gsap.timeline();
+t1.from(".animate",{
+  y:100,
+  duration:1,
+  delay:0.5,
+  opacity:0,
+  stagger:0.5
+});
+t1.from(".dev h1,.dev p ,.fotter h1",{
+  y:100,
+  opacity:0,
+  stagger:0.3
+
+})
+</script>
+     
+  </body>
+</html>

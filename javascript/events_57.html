@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events</title>
+    <style>
+      button {
+        background-color: blue;
+        color: aliceblue;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 123px;
+        cursor: pointer;
+        margin-left: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>events</h1>
+    <!-- browser events :
+    clicks:
+    contextmenu
+    mouseover/mouseout
+    moverdown/mouseup
+    mousemove
+
+    sumbit
+
+    focus
+
+    DOMcontent loded -->
+    <script></script>
+    <div class="coinener">
+      <p id="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati at
+        beatae a consectetur, dicta quasi deleniti natus fuga blanditiis commodi
+        voluptas aliquid adipisci quas corrupti illum fugit veritatis neque sunt
+        sapiente accusamus labore iste dolore non quaerat? Pariatur aliquid
+        similique in repellat dolorem molestias praesentium maiores quia quae
+        temporibus quisquam maxime, rerum obcaecati earum quis veritatis
+        perferendis fuga dolor explicabo. Rerum numquam at totam quisquam,
+        officiis dolorem optio similique ex ad, ipsum perferendis accusantium
+        repellat delectus nostrum. Earum laboriosam, eum vel maiores dolores
+        accusamus ad quam blanditiis quasi? Atque sapiente eveniet a, quia
+        maiores velit labore laborum aperiam voluptatibus, nostrum commodi
+        voluptatum facere mollitia sunt omnis! Voluptates, provident. Nobis,
+        laudantium sint? Nobis odit, quas iste ex unde sapiente animi aut
+        dolores doloremque nihil id non a, enim natus ad eos rerum voluptatem
+        maiores asperiores culpa, officia reprehenderit fugiat deserunt
+        pariatur. Temporibus consequatur aliquid eveniet quae, earum dolores nam
+        repellat animi impedit? Quibusdam, exercitationem itaque dicta culpa eos
+        maxime blanditiis, minus quas voluptates voluptate consequuntur unde,
+        nesciunt deleniti reiciendis molestiae aut? Tempora nostrum voluptatibus
+        quis eius veritatis, exercitationem nihil eaque ex dicta molestiae
+        aspernatur voluptates, perspiciatis dolore ut nobis enim ducimus
+        reiciendis! Voluptates, quis. Odit officia dolore magnam inventore iste
+        molestiae, libero nisi suscipit dolor praesentium repudiandae rerum
+        accusamus, consequatur voluptates necessitatibus voluptas dicta ab
+        ducimus ipsam, dolores neque cum alias? Dolorem est deleniti fugiat
+        totam odit nisi porro quasi, eaque quod corrupti, vel, perspiciatis
+        perferendis quisquam temporibus iusto repudiandae eius repellat
+        voluptatem alias incidunt adipisci iste sint? Repellendus eaque dolores
+        tenetur, reiciendis omnis nemo praesentium harum eius nisi hic officiis
+        suscipit iusto, consequatur ipsum fuga? Consequatur sint obcaecati rerum
+        maiores? Voluptatum numquam voluptas deserunt animi hic! Autem,
+        voluptates velit architecto, necessitatibus corrupti mollitia, ab
+        laborum nulla maiores voluptatem illo consequuntur. Alias harum quae
+        voluptebitis quod eligendi a? In assumenda aut magni consequatur modi
+        possimus, distinctio amet quasi. Natus expedita sunt illo similique
+        optio hic exercitationem labore repudiandae, rerum iste. Sapiente ex
+        quaerat minus qui repudiandae. Iste laborum consequuntur nisi id dolores
+        fuga odit eum nulla! Ipsum velit quasi provident necessitatibus adipisci
+        nisi unde culpa eos. Ab ullam unde aut sit, exercitationem repellendus
+        totam nihil illo voluptates sed blanditiis itaque, enim atque.
+        Repudiandae nemo consequatur laudantium dolor incidunt odio, illum
+        asperiores rem perferendis neque praesentium atque tempore earum nihil,
+        assumenda perspiciatis ipsam. Eum aliquam atque fugit, voluptate
+        deserunt cupiditate tenetur perspiciatis iusto error reprehenderit
+        suscipit cum labore quas vel incidunt, aperiam nesciunt, nisi vero?
+        Fugit aspernatur porro quaerat iusto velit laudantium odit non, alias
+        ipsum eum eius ipsam laborum voluptatum repudiandae quo magnam labore.
+        Voluptas, officiis nulla mollitia tempora sed minima illum. Laudantium
+        quia similique numquam ratione doloribus quos dolorem architecto dolore
+        voluptate possimus, vitae magnam maxime aspernatur quis! In, alias
+        voluptates inventore excepturi reiciendis voluptate officia odit
+        consequatur vitae. Aperiam beatae ex minus recusandae fugiat eius.
+        Asperiores quidem assumenda voluptas dolorum, nisi quis similique,
+        possimus velit minima cupiditate nesciunt dolores perferendis omnis sed!
+        Voluptatem delectus distinctio ex nulla aspernatur repellat repudiandae,
+        laboriosam dolorum quae corrupti facere iusto eius sint labore
+        voluptatibus error est mollitia asperiores amet, quam nihil esse
+        accusamus! Temporibus, unde rerum eaque vero laudantium tenetur expedita
+        perspiciatis nobis ipsam ducimus nisi soluta totam quisquam consectetur?
+        Quasi inventore id ratione dolor pariatur aliquid nulla perferendis amet
+        commodi repudiandae delectus recusandae quibusdam suscipit, aut modi
+        necessitatibus consequuntur ipsa, tenetur sequi autem consectetur rerum
+        illo corporis dolorem.
+      </p>
+    </div>
+    <button onclick=" toggleHide() ">show /hide</button>
+    <script>
+      function toggleHide() {
+        var show = document.querySelector("button");
+
+        var hide = document.querySelector("p");
+        if (hide.style.display != "none") {
+          para.style.display = "none";
+        } else {
+          para.style.display = "block";
+        }
+      }
+    </script>
+
+    <script>
+      function clkevt() {
+        document.write("This is JavaTpoint");
+      }
+    </script>
+    <form>
+      <input type="button" onclick="clkevt()" value="Who's this?" />
+    </form>
+
+    <div id="over" onmousedown="mDown(this)" onmouseup="mUp(this)"  
+      style="background-color:#D94A38;width:90px;height:20px;padding:40px;">Click Me </div>
+
+    
+    <script>
+      function mDown(b) {
+        // var b = document.querySelector('.over');
+        b.style.backgroundColor = "red";
+        b.innerHTML = "click me!!";
+      }
+      function mUp(a) {
+        // var a = document.querySelector('.over');
+        a.style.backgroundColor = "blue";
+        a.innerHTML = "thank you me!!";
+      }
+    </script>
+  </body>
+</html>

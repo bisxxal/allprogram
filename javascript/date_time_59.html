@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME</title>
+</head>
+
+<body>
+    <H1>DATE AND TIME</H1>
+    <script>
+        let now = new Date();
+        console.log(now)
+
+        let dt = new Date(1000);
+        console.log(dt)
+
+        let newDate = new Date("2029-09-30");
+        console.log(newDate);
+
+
+        // let future = new Date(year,month,date,hours,minutes,seconds,miliseconds);
+        let future = new Date(2023, 0, 19, 5, 24, 45, 34);
+        console.log(future);
+
+        ///functions in time 
+
+        let yr = newDate.getFullYear();
+        console.log("the year is ", yr);
+
+        let dl = newDate.getDate();
+        console.log("the date is ", dl);
+
+        let month = newDate.getMonth();
+        console.log("the date is ", month);
+
+        let hr = newDate.getHours();
+        console.log("the hour is ", dl);
+
+        // change time in js
+
+        newDate.setDate(76);
+        console.log(newDate)
+    </script>
+</body>
+
+</html>

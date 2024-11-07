@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "random": "cpp",
+        "array": "c",
+        "string": "c",
+        "vector": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

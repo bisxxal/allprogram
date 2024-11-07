@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background: #000;
+        }
+        h1{
+            color: white;
+            padding-left: 50%;
+        }
+        input{
+            background-color: cadetblue;
+            height:  100px;
+            width: 200px;
+            margin-left: 50%;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+        }
+    </style>
+<style>
+    #myProgress {
+      width: 100%;
+      height: 30px;
+      position: relative;
+      background-color: #ddd;
+    }
+    
+    #myBar {
+      background-color: #4CAF50;
+      width: 10px;
+      height: 30px;
+      position: absolute;
+    }
+    button{
+        background-color: green;
+        width: 250px;
+        height: 50px;
+        margin-left: 50%;
+    }
+    </style>
+</head>
+<body>
+    <h1  >
+        trying to heal 
+    </h1>
+    <script>
+
+        // alert("what is your name ");
+        // let name = prompt("what is your name ","likle bisxxal");
+        // console.log(name);
+
+        //conform 
+
+        // let  delPost = confirm("Do you want to delete the post ");
+        // if(delPost){
+        //     alert("deletede succfully");
+        // }
+        // else
+            
+        //     alert("Not delelted ");
+
+    </script>
+
+    <!-- <script type="text/youTube">  
+        function msg(){  
+        open("http://www.youTube.com");  
+        }  
+        </script>  
+        <input type="button" value="youTube"  onclick="msg()"/>   -->
+<div class="cointerner">This is cointerner</div>
+
+        <script>
+            setTimeout(function fun(name ){
+               alert(`"hello world  ! ${name} After 5 second "` )
+            },3000,"bisxxal" );   //argument passed in after sec declaration 
+        </script>
+
+                                        <!-- JAVASCRIPT PROCCES BAR -->
+    
+    <h1>JavaScript Progress Bar</h1>
+    
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+    
+    <br>
+    <button onclick="move()">Click Me</button> 
+    
+    <script>
+    function move() { 
+      const element = document.getElementById("myBar");   
+      let width = 0;
+      const id = setInterval(frame, 10);
+      function frame() {
+        if (width == 100) {
+          clearInterval(id);
+        } else {
+          width++; 
+          element.style.width = width + '%'; 
+        }
+      }
+    }
+    </script>
+    
+</body>
+</html>

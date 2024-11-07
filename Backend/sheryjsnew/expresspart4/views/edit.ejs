@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900">
+
+        <div class="from p-10 text-white w-full"> 
+            <a class="text-blue-600 mb-5 " href="/">Go Back To Home</a>
+            <form action="/edit" method="post">
+                <input class="block px-5 rounded-md w-1/4 outline-none py-2 bg-zinc-800" type="text"  name="prev" value=<%= filename%>  >
+                <input class="block px-5 rounded-md w-1/4 my-4 outline-none py-2 bg-zinc-800" type="text"    name="new">
+                  <input class="bg-yellow-500  px-5 py-2 rounded-md" type="submit" value="Rename task">    
+            </form>
+        </div>
+
+        
+    </div>
+</body>
+</html>

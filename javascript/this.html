@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    
+    setTimeout(()=>{
+        console.log (this.firstName + " " + this.lastName);
+
+    } , 3000)
+  }
+};
+console.log(person.fullName())
+const info = {
+    name : 'bisxxal',
+    age : 19,
+    prof: "Developer",
+
+   myfun : function  (){
+        return this.name+ " is a "+ this.prof;
+    }}
+    console.log(info.myfun());
+
+    const arr = (a,b) => a/b;
+
+    console.log(arr(12));
+
+    var arr2 = [,12,23434,2,1,45];
+
+    // ar.forEach(element => {
+        
+    // });
+
+    arr2.forEach(function (ele){
+        console.log(ele);
+    });
+
+    var website="juju Nugudu";  
+
+    function web()  
+    {  
+    console.log((this.website));  
+    }  
+    web();
+
+    </script>
+</body>
+</html>

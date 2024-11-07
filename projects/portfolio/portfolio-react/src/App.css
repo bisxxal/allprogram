@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family:New;
+  src: url(./assets/NeuePower-Ultra.ttf);
+}
+@font-face {
+  font-family:cb;
+  src: url(./assets/cyberank-malrv.otf);
+}
+
+@font-face {
+  font-family:bath;
+  src: url(./assets/bathyork-1j9qj.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  /* cursor: none; */
+}
+
+.animate-gradient {
+  /* background: linear-gradient(270deg, #360266, #4E48E6, #00ff59); */
+  background-image:
+radial-gradient(at 71% 98%, hsla(238,71%,71%,1) 0px, transparent 50%),
+radial-gradient(at 36% 52%, hsla(211,68%,60%,1) 0px, transparent 50%),
+radial-gradient(at 27% 14%, hsla(156,74%,75%,1) 0px, transparent 50%),
+radial-gradient(at 89% 2%, hsla(284,92%,63%,1) 0px, transparent 50%),
+radial-gradient(at 29% 65%, hsla(261,96%,78%,1) 0px, transparent 50%),
+radial-gradient(at 24% 34%, hsla(214,77%,63%,1) 0px, transparent 50%),
+radial-gradient(at 94% 18%, hsla(273,68%,67%,1) 0px, transparent 50%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 7s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.logo h2,
+.movindtextdiv h1 { 
+  font-family: "Bebas Neue" !important; 
+}
+.logo h2{  
+  font-family: cb !important; 
+} 
+.leftside h1,
+.leftside span {
+  font-family: bath !important; 
+  font-weight: bolder; 
+  
+}  
+.leftside span{ 
+  text-shadow: none;
+  
+} 
+.lbtn:active {
+  transform: scale(0.95);
+  background: linear-gradient(270deg, #360266, #4E48E6, #ff00ea);
+  background-size: 400% 400%;
+   
+  animation: gradient 10s ease infinite;
+}
+
+ 
+.lbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.lbtn:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
+}
+
+.lbtn:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: rgb(222,0,75);
+  background: linear-gradient(90deg, rgba(222,0,75,1) 0%, rgba(191,70,255,1) 49%, rgba(0,212,255,1) 100%);
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+.lbtn:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.mainimg ,.icon{
+  animation: imgani 1s linear alternate-reverse infinite;
+  filter:contrast(1.19) drop-shadow(-10px 4px 12px #000000a7);
+  
+}
+.icon{
+  animation: imgani 2s linear alternate-reverse infinite; 
+}
+@keyframes imgani {
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.movindtextdiv h1 ::selection {
+  background-color: transparent;
+}
+
+.gradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 20;
+  background: linear-gradient(76deg, #121925 0%, rgba(255, 255, 255, 0) 123%);
+}
+
+.skils {   
+
+    
+background-image:
+radial-gradient(at 71% 98%, hsla(238,71%,71%,1) 0px, transparent 50%),
+radial-gradient(at 36% 52%, hsla(211,68%,60%,1) 0px, transparent 50%),
+radial-gradient(at 27% 14%, hsla(156,74%,75%,1) 0px, transparent 50%),
+radial-gradient(at 89% 2%, hsla(284,92%,63%,1) 0px, transparent 50%),
+radial-gradient(at 29% 65%, hsla(261,96%,78%,1) 0px, transparent 50%),
+radial-gradient(at 24% 34%, hsla(214,77%,63%,1) 0px, transparent 50%),
+radial-gradient(at 94% 18%, hsla(273,68%,67%,1) 0px, transparent 50%);
+
+
+  background-size: 200% 200%;
+  animation: gradientMove 5s linear alternate-reverse infinite;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.skilsimgh {
+  background: linear-gradient(0deg, #ffffff30 5%, rgba(0, 0, 0, 0) 58%);
+  /* border-radius: 70% 37% 50% 35% / 70% 18% 62% 21%  */
+ 
+}
+.page6 button {
+  box-shadow: 0px -1px 31px -2px rgb(0, 255, 0);
+}
+.page7 div {
+  background-color: transparent;
+}
+
+.myworkdiv img {
+  box-shadow: 1px 7px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease;
+}

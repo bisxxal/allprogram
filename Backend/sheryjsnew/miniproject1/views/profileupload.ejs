@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+       textarea,body::-webkit-scrollbar{
+        width: 5px;
+       }
+    </style>
+    
+</head>
+<body>
+    <div class="w-full min-h-screen bg-zinc-900">
+        <div class="flex justify-end pr-10"><a class="text-white px-5 py-1 mt-3 py- rounded-lg bg-red-600 text-medium" href="/logout">Logout</a></div>
+        <div class="text-white px-10">
+               <h1 class="text-2xl">Upload Profile Photo.</h1>
+
+             <form class="mt-4" action="/upload" method="post" enctype="multipart/form-data">
+                <input class=" rounded-md border-[.5px] border-zinc-700" type="file" name="images" />
+ 
+                <input class="block px-3 py-1 bg-green-600  mt-3 rounded-md font-semibold"  type="submit" value="Upload">    
+                 </form>
+ 
+            </div>
+    </div>
+</body>
+</html>

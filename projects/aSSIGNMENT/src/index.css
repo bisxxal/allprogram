@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-bg {  
+background: linear-gradient(125deg, rgba(163,96,230,1) 9%, rgba(169,113,225,1) 48%, rgba(220,133,165,1) 63%, rgba(220,133,165,1) 86%, rgba(242,129,171,1) 93%);
+  background-size: 1000% 1000%;
+  animation: gradient 7s ease alternate-reverse infinite;
+}
+.gradient-border {
+  border-image: linear-gradient(125deg, rgba(163,96,230,1) 9%, rgba(169,113,225,1) 48%, rgba(220,133,165,1) 63%, rgba(220,133,165,1) 86%, rgba(242,129,171,1) 93%) 1;
+  border-width: 2px; 
+  border-radius: 50%;
+}

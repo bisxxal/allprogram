@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900">
+        <h1 class="pt-20  text-3xl text-white text-center">Create an Account</h1>
+        <div class="text-white w-full my-4 flex item-center justify-center flex-col px-10">
+            <form class="   flex flex-col  gap-3" method="post" action="/register">
+                    <input class="px-5 py-1 bg-zinc-800 w-[300px] ml-[600px]  border border-zinc-600 outlie-none rounded-md" name="userName" placeholder="Username"  type="text">
+                    <input class="px-5 py-1 bg-zinc-800 w-[300px] ml-[600px] border border-zinc-600 outlie-none rounded-md" name="name" placeholder="Name"  type="text">
+                    <input class="px-5 py-1 bg-zinc-800 w-[300px] ml-[600px] border border-zinc-600 outlie-none rounded-md" name="email" placeholder="Email id" type="email">
+                    <input class="px-5 py-1 bg-zinc-800 w-[300px] ml-[600px] border border-zinc-600 outlie-none rounded-md" name="password" placeholder="password" type="password">
+                    <input class="px-3 py-1 bg-blue-500 w-[300px] ml-[600px] rounded-md "  type="submit" value="create user">    
+                </form>
+            </div>
+           <h1 class="text-center text-white text-[20px]">Already have an account  <a class="text-blue-500    text-xl" href="/login"> Login</a></h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var j = '{"Name":"Krishna","Email": "XYZ", "CN": "12345"}';
+      var data = JSON.parse(j);
+    //   document.write("Convert string in JSON format using parse() method<br>");
+      console.log((data)); //expected output: XYZ
+
+      var per = {
+        name : "bisxxal",
+        id : 25,
+        prof : "dev",
+
+      }
+      console.log(JSON.stringify(per));
+
+      var j = '["C++","JavaScript","Python","HTML"]';  
+      var data = JSON.parse(j);  
+      console.log(data); 
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        /* h1{
+             /* background-color: yellow; */
+        /* }  */
+    </style>
+</head>
+<body>
+    <h2>hii</h2>
+    <h2>hello</h2>
+    <h2>lolu</h2>
+    <h2>choda</h2>
+    <h1>DOM MANIPLUTING</h1>
+    <div id="main" class="cointenaer">
+        anather cointerner
+        <ul id="nav">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICE</li>
+            <li>MORE ABOUT US </li>
+            <li>CONTACT US </li>
+        </ul>
+    </div>
+    <SCript>
+        let main=document.getElementById('main');
+        console.log(main);
+
+        let nav=document.getElementById('nav');
+        console.log(nav);
+
+        //by class 
+        let coin =document.getElementsByClassName('cointenaer')
+        console.log(coin )
+        //query selector
+
+        let sel=document.querySelector('#nav>li');
+        console.log("selector retuens ",sel);
+
+        let sels=document.querySelectorAll('#nav>li');
+        console.log("selector retuens ",sels);
+
+        // 4 pillers of DOM
+        // 1 - selectionn of an element 
+        // 2  - changing HTML
+        // 3  - changing CSS
+        
+        // 4 - Event Listioner
+       
+
+        // 1 - selectionn of an element
+        
+        var a = document.querySelector("h1");
+        // var a = document.querySelector(".nav");                          //for id 
+        // var a = document.querySelector("#cointtener");                   //for class
+        console.log(a);
+        
+// 2  - changing HTML
+        document.querySelector("h1").innerHTML="Bisxxal";
+// 3  - changing CSS
+        var a = document.querySelector("h1");
+        // a.style.color= 'red';
+        a.style.fontSize = '100px';
+        // a.paddingLeft = '100px'
+        a.style.paddingLeft =  '500px';
+
+ // 4 - Event Listioner
+        var ax =document.querySelector('h1');
+        ax.addEventListener("click" , function(){
+            console.log("hello");
+            ax.innerHTML = 'COADDER BISXXAL '
+             
+            ax.style.color= 'red'
+            ax.style.backgroundColor = 'yellow';
+        })
+
+        // FOR SELECTION MULTIPLE TAGS WE NEEED TO PUT THIS ATTRIBUTES
+
+        var v= document.querySelectorAll("h2");
+        console.log(v);
+
+    </Script>
+</body>
+</html>

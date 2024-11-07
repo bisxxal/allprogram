@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+
+.todo{
+  display: flex;
+  gap: 10px;
+  background-color: rgba(117, 204, 255, 0.83);
+  justify-content: space-between;
+  padding: 10px 25px;
+  color: black;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.deletebtn{
+  color: red;
+  font-size: large;
+  font-weight: 700;
+}
+
+.isdel{
+  text-decoration: line-through;
+}

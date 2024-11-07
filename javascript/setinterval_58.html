@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settime out</title>
+</head>
+<body>
+    <h1>SET TIME AND CLEARTIME</h1>
+<div>
+    time is now <span id="time"></span>
+</div>
+    <script>
+
+        // setime --> allows us to run function once afte the interval of time 
+        // clearTimeout -->  allows us to run function repetely afte the interval of time 
+// Syntax ------->
+// window.setInterval(function, milliseconds);  
+
+
+        function fun(name,text ){
+            console.log("hello"+name+""+text);
+        }
+        setTimeout(fun ,5000," bisxxal"," take care");  // inside the settime fuinction the function cannot be called ex-fun ()
+         
+// lets ex of time out
+
+
+        timeOut =  setTimeout(fun ,5000," tikili "," fuck up");
+        clearTimeout(timeOut);
+
+        //set interval ex--.
+
+        setInterval(fun ,1000," bisxal "," how are you ?")      
+
+        clearInterval(setInterval);
+
+ 
+
+        ///display a time in web page 
+
+        function displayTime(){
+            time = new Date();
+            // console.log(time);      //this is for print in console pge 
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime,1000)
+    </script>
+</body>
+</html>
